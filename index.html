@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1219 期中報告 Midterm Presentation List - 南勢阿美語</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        body { 
+            background-color: #f1f5f9; 
+            font-family: 'Noto Sans TC', sans-serif; 
+        }
+        .amis-text {
+            line-height: 2;
+            letter-spacing: 0.03em;
+        }
+        .student-table th {
+            background-color: #1e293b;
+            color: #f1f5f9;
+            font-weight: 600;
+        }
+        .page-title-gradient {
+            background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
+        }
+        .bilingual-sub {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: normal;
+            opacity: 0.8;
+            margin-top: 1px;
+        }
+        /* 姓名可編輯樣式 */
+        .editable-name {
+            cursor: text;
+            transition: all 0.2s;
+        }
+        .editable-name:hover {
+            background-color: #eef2ff;
+        }
+        .editable-name:focus {
+            background-color: #fff;
+            outline: 2px solid #6366f1;
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-12">
+    <!-- 頂部導覽 / Navigation -->
+    <nav class="bg-slate-900 text-white p-4 shadow-lg mb-0">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold flex items-center gap-2">
+                <i class="fas fa-university text-indigo-400"></i> 
+                <div>
+                    族語能力認證學習系統
+                    <span class="bilingual-sub">Indigenous Language Certification System</span>
+                </div>
+            </h1>
+            <div id="connection-indicator" class="text-xs bg-slate-800 px-3 py-1 rounded-full border border-slate-700">
+                <i class="fas fa-check-circle text-green-400 mr-1"></i> 
+                雲端連動中 <span class="ml-1 opacity-60">Cloud Syncing</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 專屬標題區 / Header Section -->
+    <div class="page-title-gradient text-white py-10 px-4 mb-8 shadow-inner">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
+                1219 期中報告
+            </h2>
+            <p class="text-xl md:text-2xl font-light text-indigo-100 italic">
+                Midterm Presentation List
+            </p>
+            <div class="mt-6 flex flex-wrap justify-center gap-4">
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-xl text-sm border border-white/30 flex flex-col items-center">
+                    <span class="font-bold">2025年 12月 19日</span>
+                    <span class="text-[10px] opacity-80 uppercase tracking-widest">December 19, 2025</span>
+                </span>
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-xl text-sm border border-white/30 flex flex-col items-center">
+                    <span class="font-bold text-center">幼教系-族語3-語文教室 (南勢阿美語組)</span>
+                    <span class="text-[10px] opacity-80 uppercase tracking-widest">Dept. of ECE - Language Lab (Nanshi Amis)</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4">
+        
+        <!-- 考生名單區塊 / Student List Section -->
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 mb-10 overflow-hidden">
+            <div class="bg-slate-50 px-6 py-4 border-b border-slate-200 flex justify-between items-center">
+                <h3 class="font-bold text-slate-800 flex items-center gap-2 text-lg">
+                    <i class="fas fa-list-ol text-indigo-600"></i> 
+                    <div>
+                        南勢阿美語報告名單
+                        <span class="text-xs font-normal text-slate-500 block">Nanshi Amis Presentation List</span>
+                    </div>
+                </h3>
+                <span class="text-[10px] text-indigo-500 bg-white px-2 py-1 rounded border border-indigo-100 font-bold">
+                    <i class="fas fa-edit mr-1"></i> 姓名點擊可修改 / Names are Editable
+                </span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left student-table">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-4 text-sm">序號 <span class="bilingual-sub">ID</span></th>
+                            <th class="px-6 py-4 text-sm">姓名 (可修改) <span class="bilingual-sub">Name (Editable)</span></th>
+                            <th class="px-6 py-4 text-sm">族語分組 <span class="bilingual-sub">Group</span></th>
+                            <th class="px-6 py-4 text-sm">考生級別 <span class="bilingual-sub">Level</span></th>
+                            <th class="px-6 py-4 text-sm">測驗時段 <span class="bilingual-sub">Schedule</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <!-- Student 1 -->
+                        <tr class="hover:bg-indigo-50/50 transition-colors">
+                            <td class="px-6 py-4 font-mono font-bold text-indigo-600 text-lg">01</td>
+                            <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">林芳宇</td>
+                            <td class="px-6 py-4 text-slate-600">南勢阿美 <span class="text-[10px] text-slate-400 block">Nanshi Amis</span></td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold ring-1 ring-amber-200">中高級 / High-Int.</span></td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-500">14:10 - 14:21</td>
+                        </tr>
+                        <!-- Student 2 -->
+                        <tr class="hover:bg-indigo-50/50 transition-colors">
+                            <td class="px-6 py-4 font-mono font-bold text-indigo-600 text-lg">06</td>
+                            <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">魏翔慧</td>
+                            <td class="px-6 py-4 text-slate-600">南勢阿美 <span class="text-[10px] text-slate-400 block">Nanshi Amis</span></td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold ring-1 ring-amber-200">中高級 / High-Int.</span></td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-500">15:05 - 15:16</td>
+                        </tr>
+                        <!-- Student 3 -->
+                        <tr class="hover:bg-indigo-50/50 transition-colors">
+                            <td class="px-6 py-4 font-mono font-bold text-indigo-600 text-lg">09</td>
+                            <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">林詩晨</td>
+                            <td class="px-6 py-4 text-slate-600">南勢阿美 <span class="text-[10px] text-slate-400 block">Nanshi Amis</span></td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold ring-1 ring-amber-200">中高級 / High-Int.</span></td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-500">15:40 - 15:51</td>
+                        </tr>
+                        <!-- Student 4 -->
+                        <tr class="hover:bg-indigo-50/50 transition-colors">
+                            <td class="px-6 py-4 font-mono font-bold text-indigo-600 text-lg">11</td>
+                            <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">余晨儀</td>
+                            <td class="px-6 py-4 text-slate-600">南勢阿美 <span class="text-[10px] text-slate-400 block">Nanshi Amis</span></td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold ring-1 ring-amber-200">中高級 / High-Int.</span></td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-500">16:02 - 16:13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- 左側：考題區 / Questions Section -->
+            <div class="space-y-8">
+                <!-- Task 1 -->
+                <div class="bg-white p-3 rounded-3xl shadow-lg overflow-hidden border border-slate-200">
+                    <p class="px-5 py-4 font-bold text-slate-800 border-b flex items-center justify-between bg-indigo-50/50">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-file-alt text-indigo-500"></i> 
+                            <div>
+                                朗讀考題
+                                <span class="text-[10px] font-normal text-slate-500 block uppercase tracking-tighter">Reading Task</span>
+                            </div>
+                        </span>
+                        <span class="text-[11px] font-bold text-indigo-400 bg-white px-2 py-0.5 rounded border border-indigo-100">TASK 1</span>
+                    </p>
+                    <img src="https://res.cloudinary.com/dm1ksvptk/image/upload/v1765898898/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2_2025-12-16_232600_a2yd2v.png" 
+                         alt="Reading Task Image" 
+                         class="w-full h-auto object-contain rounded-b-2xl">
+                </div>
+
+                <!-- Task 2 -->
+                <div class="bg-white p-3 rounded-3xl shadow-lg overflow-hidden border border-slate-200">
+                    <p class="px-5 py-4 font-bold text-slate-800 border-b flex items-center justify-between bg-emerald-50/50">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-comment-dots text-emerald-500"></i> 
+                            <div>
+                                朗讀說故事考題
+                                <span class="text-[10px] font-normal text-slate-500 block uppercase tracking-tighter">Storytelling Task</span>
+                            </div>
+                        </span>
+                        <span class="text-[11px] font-bold text-emerald-400 bg-white px-2 py-0.5 rounded border border-emerald-100">TASK 2</span>
+                    </p>
+                    <img src="https://res.cloudinary.com/dm1ksvptk/image/upload/v1765943491/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2_2025-12-17_114928_ehkciz.png" 
+                         alt="Story Task Image" 
+                         class="w-full h-auto object-contain rounded-b-2xl">
+                </div>
+            </div>
+
+            <!-- 右側：播放器與文本 / Player & Content -->
+            <div class="space-y-8">
+                <!-- 播放器區塊 -->
+                <div class="bg-slate-800 p-8 rounded-[2rem] shadow-2xl text-white ring-4 ring-slate-700/50">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-xl font-bold flex items-center gap-3">
+                            <i class="fas fa-headphones-alt text-indigo-400"></i> 
+                            <div>
+                                參考音訊播放
+                                <span class="text-[10px] font-normal text-slate-400 block uppercase tracking-widest">Reference Audio Playback</span>
+                            </div>
+                        </h3>
+                    </div>
+                    <audio controls class="w-full h-12">
+                        <source src="https://res.cloudinary.com/dm1ksvptk/video/upload/v1766037385/%E5%8D%97%E5%8B%A210-5-1%E5%8D%81%E4%BA%8C%E9%9A%8E%E6%95%99%E6%9D%90_-_%E5%AD%B8%E7%BF%92_-_%E6%97%8F%E8%AA%9EE%E6%A8%82%E5%9C%92_wcs536.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <!-- 讀稿內容文字 -->
+                <div class="bg-white p-10 rounded-[2rem] shadow-xl border border-slate-100 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 -mr-10 -mt-10 rounded-full"></div>
+                    <h3 class="text-2xl font-bold text-slate-800 mb-8 border-l-4 border-indigo-500 pl-4">
+                        朗讀內容文字
+                        <span class="text-xs font-normal text-slate-500 block">Reading Text Content</span>
+                    </h3>
+                    <div class="amis-text text-2xl md:text-3xl text-slate-700 italic font-medium leading-relaxed bg-slate-50/80 p-8 rounded-2xl border border-dashed border-slate-300">
+                        "Adihay ko kasasiromaroma no losay tona sepatay no parapatan, kafodo’an to ko kacanglahan, saromi’ami’ad sato a ma’orad, makakiya’ot a cicengo’ ko pinalengaw, makakiya’ot a paseneng macelak ko hana. Tona hekal adihay ko lengaw no lalopela’, o daheci, o tefo’ ato o milaladay a dateng mato o roni, o kakorot, o kalitang."
+                    </div>
+                </div>
+
+                <!-- 資源連結 / Resources -->
+                <div class="flex items-center justify-center gap-8 py-4">
+                    <a href="https://res.cloudinary.com/dm1ksvptk/video/upload/v1766037385/%E5%8D%97%E5%8B%A210-5-1%E5%8D%81%E4%BA%8C%E9%9A%8E%E6%95%99%E6%9D%90_-_%E5%AD%B8%E7%BF%92_-_%E6%97%8F%E8%AA%9EE%E6%A8%82%E5%9C%92_wcs536.mp3" 
+                       target="_blank" 
+                       class="flex flex-col items-center gap-1 text-indigo-600 font-bold hover:underline group transition-all">
+                        <span class="flex items-center gap-2"><i class="fas fa-download"></i> 下載音檔</span>
+                        <span class="text-[10px] font-normal text-slate-400 group-hover:text-indigo-500">Download Audio</span>
+                    </a>
+                    <span class="text-slate-200">|</span>
+                    <a href="https://web.klokah.tw/" 
+                       target="_blank" 
+                       class="flex flex-col items-center gap-1 text-indigo-600 font-bold hover:underline group transition-all">
+                        <span class="flex items-center gap-2"><i class="fas fa-external-link-alt"></i> 族語E樂園</span>
+                        <span class="text-[10px] font-normal text-slate-400 group-hover:text-indigo-500">E-Learning Portal</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-16 text-center text-slate-400 text-sm py-8 border-t border-slate-200">
+        <p>南勢阿美語 | 10-5-1 認證輔助系統</p>
+        <p class="mt-1">© 2025 Midterm Evaluation Management System</p>
+    </footer>
+
+    <!-- Firebase SDK (保持原本連線功能) -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+        async function init() {
+            try {
+                const firebaseConfig = JSON.parse(__firebase_config);
+                const app = initializeApp(firebaseConfig);
+                const auth = getAuth(app);
+                
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                onAuthStateChanged(auth, (user) => {
+                    if (user) {
+                        const ind = document.getElementById('connection-indicator');
+                        ind.innerHTML = `<i class="fas fa-check-circle text-green-400 mr-1"></i> 雲端連動成功 <span class="ml-1 opacity-60">Cloud Sync Success</span>`;
+                    }
+                });
+            } catch (err) {
+                // Silent catch
+            }
+        }
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
